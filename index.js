@@ -229,7 +229,7 @@ var jsdelivr = {
 };
 
 // Handle command line usage
-if(process.argv.length > 2) {
+if(require.main === module && process.argv.length > 2) {
     (function () {
         var method = process.argv[2];
         var term = process.argv[3];
